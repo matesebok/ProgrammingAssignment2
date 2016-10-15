@@ -2,7 +2,7 @@
 #                Title :
 # Caching Inverse of a given  Matrix
  
-# Example usage
+# Example usage is below
 # m <- matrix(c(0, 2, 1, 0), nrow = 2, ncol = 2, byrow = TRUE)
 # m2 <- makeCacheMatrix(m)
 
