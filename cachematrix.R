@@ -40,3 +40,15 @@ inv <- NULL
   ## return list of functions for matrix
   list(get=get, set=set, getinv=getinv, setinv=setinv)
 }
+
+   # Computes the inverse of a matrix. If the inverse has already been
+# calculated before, the cached inverse is returned.
+#
+# Args:
+#   x: A matrix
+#   ...: Extra arguments
+#
+# Returns:
+#   The inverse of the matrix
+cacheSolve <- function(x, ...) {
+inv <- x$getinv()
