@@ -16,3 +16,10 @@
 # [,1] [,2]
 # [1,]  0.0    1
 # [2,]  0.5    0
+
+# Creates a matrix that can cache it's inverse
+#
+# Args:
+#   x: A matrix (Optional)
+#
+# Returns:
