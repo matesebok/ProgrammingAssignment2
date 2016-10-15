@@ -2,3 +2,17 @@
 #                Title :
 # Caching Inverse of a given  Matrix
  
+# Example usage
+# m <- matrix(c(0, 2, 1, 0), nrow = 2, ncol = 2, byrow = TRUE)
+# m2 <- makeCacheMatrix(m)
+
+# cacheSolve(m2)
+# [,1] [,2]
+# [1,]  0.0    1
+# [2,]  0.5    0
+
+# cacheSolve(m2)
+# inverse is cached
+# [,1] [,2]
+# [1,]  0.0    1
+# [2,]  0.5    0
