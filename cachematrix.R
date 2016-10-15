@@ -46,15 +46,24 @@ inv <- NULL
 #
 # Args:
 #   x: A matrix
-#   ...: Extra arguments
+#   ...: further extra arguments
 #
-# Returns:
-#   The inverse of the matrix
+# Returns: The inverse of the matrix
 cacheSolve <- function(x, ...) {
 inv <- x$getinv()
  
-  # return cached matrix inverse if it's been already computed
+  # return cached matrix inverse if it's been already computed inside
   if (!is.null(inv)) {
     message("inverse is cached")
     return(inv)
+}
+ # compute inverse of  a given matrix 
+  m <- x$get()
+  inv <- solve(m, ...)
+  
+  # cache inverse
+  x$setinv(inv)
+  
+  # return inverse of matrix
+  return(inv)
 }
