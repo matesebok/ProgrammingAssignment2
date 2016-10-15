@@ -52,3 +52,9 @@ inv <- NULL
 #   The inverse of the matrix
 cacheSolve <- function(x, ...) {
 inv <- x$getinv()
+ 
+  # return cached matrix inverse if it's been already computed
+  if (!is.null(inv)) {
+    message("inverse is cached")
+    return(inv)
+}
