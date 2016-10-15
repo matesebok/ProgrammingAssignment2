@@ -23,3 +23,7 @@
 #   x: A matrix (Optional)
 #
 # Returns:
+#   A matrix with functions to get/set value & get/set inverse
+makeCacheMatrix <- function(x = matrix()) {
+  # cached inverse of matrix
+inv <- NULL
