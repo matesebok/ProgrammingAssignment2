@@ -33,3 +33,10 @@ inv <- NULL
     x <<- y
     inv <<- NULL
 }
+  ## getter/setter for matrix inverse
+  getinv <- function() inv
+  setinv <- function(inverse) inv <<- inverse
+  
+  ## return list of functions for matrix
+  list(get=get, set=set, getinv=getinv, setinv=setinv)
+}
