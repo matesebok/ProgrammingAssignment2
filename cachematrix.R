@@ -33,7 +33,7 @@ inv <- NULL
     x <<- y
     inv <<- NULL
 }
-  ## getter/setter for matrix inverse
+  ## getter/setter for matrix  inverse 
   getinv <- function() inv
   setinv <- function(inverse) inv <<- inverse
   
