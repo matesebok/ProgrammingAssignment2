@@ -27,3 +27,9 @@
 makeCacheMatrix <- function(x = matrix()) {
   # cached inverse of matrix
 inv <- NULL
+ ## getter/setter for matrix
+  get <- function() x
+  set <- function(y) {
+    x <<- y
+    inv <<- NULL
+}
